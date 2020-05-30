@@ -1,0 +1,19 @@
+<span>
+    <span v-if="rating == 0 || rating == -1 || rating == null" @click="set_rating(1)">
+        <i class="fa fa-thumbs-o-up"></i>
+    </span>
+
+    <span v-if="rating == 1" @click="set_rating(0)">
+        <i class="fa fa-thumbs-up"></i>
+    </span>
+    
+    <span v-if="rating == 0 || rating == 1 || rating == null" @click="set_rating(-1)">
+        <i class="fa fa-thumbs-o-down"></i>
+    </span>
+
+    <span v-if="rating == -1" @click="set_rating(0)">
+        <i class="fa fa-thumbs-down"></i>
+    </span>
+    
+</span>
+
